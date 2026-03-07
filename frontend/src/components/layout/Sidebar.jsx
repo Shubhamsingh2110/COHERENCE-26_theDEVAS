@@ -11,7 +11,9 @@ import {
   LogOut,
   Menu,
   X,
-  Shield
+  Shield,
+  BarChart3,
+  ArrowRightLeft
 } from 'lucide-react';
 import { useState } from 'react';
 
@@ -25,6 +27,8 @@ const Sidebar = ({ isOpen, onClose }) => {
     { path: '/analytics', icon: TrendingUp, label: 'Analytics' },
     { path: '/anomalies', icon: AlertTriangle, label: 'Anomaly Detection' },
     { path: '/verification', icon: Shield, label: 'Budget Verification' },
+    { path: '/facts-and-figures', icon: BarChart3, label: 'Facts & Figures' },
+    { path: '/smart-reallocation', icon: ArrowRightLeft, label: 'Smart Reallocation' },
     { path: '/map', icon: Map, label: 'Geospatial View' },
     { path: '/ai-assistant', icon: Bot, label: 'AI Assistant' },
     { path: '/reports', icon: FileText, label: 'Reports' },
