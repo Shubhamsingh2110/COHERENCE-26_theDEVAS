@@ -103,4 +103,17 @@ export const districtAPI = {
   update: (id, data) => api.put(`/districts/${id}`, data),
 };
 
+// Facts & Figures APIs
+export const factsAPI = {
+  getSchemeStatistics: () => api.get('/facts/scheme-statistics'),
+  getSchemeFactSheet: (schemeName) => api.get(`/facts/scheme/${encodeURIComponent(schemeName)}`),
+  getAllSchemes: () => api.get('/facts/schemes'),
+};
+
+// Reallocation APIs
+export const reallocationAPI = {
+  getRecommendations: () => api.get('/reallocation/recommendations'),
+  getSchemeAnalysis: (schemeName) => api.get(`/reallocation/scheme-analysis/${encodeURIComponent(schemeName)}`),
+};
+
 export default api;

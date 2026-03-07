@@ -7,6 +7,8 @@ import BudgetFlow from './pages/BudgetFlow';
 import Analytics from './pages/Analytics';
 import AnomalyDetection from './pages/AnomalyDetection';
 import BudgetVerification from './pages/BudgetVerification';
+import FactsAndFigures from './pages/FactsAndFigures';
+import SmartReallocation from './pages/SmartReallocation';
 import GeospatialView from './pages/GeospatialView';
 import AIAssistant from './pages/AIAssistant';
 import Reports from './pages/Reports';
@@ -33,6 +35,8 @@ function App() {
         <Route path="analytics" element={<Analytics />} />
         <Route path="anomalies" element={<AnomalyDetection />} />
         <Route path="verification" element={<BudgetVerification />} />
+        <Route path="facts-and-figures" element={<FactsAndFigures />} />
+        <Route path="smart-reallocation" element={<SmartReallocation />} />
         <Route path="map" element={<GeospatialView />} />
         <Route path="ai-assistant" element={<AIAssistant />} />
         <Route path="reports" element={<Reports />} />

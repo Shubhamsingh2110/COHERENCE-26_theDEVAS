@@ -31,6 +31,8 @@ app.use('/api/anomalies', require('./routes/anomalies'));
 app.use('/api/ai', require('./routes/ai'));
 app.use('/api/districts', require('./routes/districts'));
 app.use('/api/verification', require('./routes/verification'));
+app.use('/api/facts', require('./routes/facts'));
+app.use('/api/reallocation', require('./routes/reallocation'));
 
 // Health check route
 app.get('/health', (req, res) => {
